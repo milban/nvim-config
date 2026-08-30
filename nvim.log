@@ -1,0 +1,3 @@
+WRN 2026-08-30T13:43:35.952 ?.39925    server_start:197: Failed to start server: operation not permitted: /var/folders/wt/pzzv95s131ng8z98v20drsqm0000gn/T/nvim.junhyuk-park/CW8Jws/nvim.39925.0
+WRN 2026-08-30T13:58:10.130 ?.42574    server_start:197: Failed to start server: operation not permitted: /var/folders/wt/pzzv95s131ng8z98v20drsqm0000gn/T/nvim.junhyuk-park/8a4il7/nvim.42574.0
+WRN 2026-08-30T13:58:37.212 ?.42652    server_start:197: Failed to start server: operation not permitted: /var/folders/wt/pzzv95s131ng8z98v20drsqm0000gn/T/nvim.junhyuk-park/OLqOji/nvim.42652.0

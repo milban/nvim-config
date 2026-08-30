@@ -12,3 +12,9 @@ end, {
 vim.keymap.set("n", "<leader>vl", "<cmd>VimLanguage<CR>", {
   desc = "Vim 편집 언어 학습 문서를 엽니다",
 })
+
+vim.lsp.enable("lua_ls")
+
+vim.diagnostic.config({
+  virtual_text = true,
+})
