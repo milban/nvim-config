@@ -5,10 +5,14 @@ vim.opt.tabstop = 2
 vim.opt.shiftwidth = 2
 vim.opt.softtabstop = 2
 
+vim.opt.completeopt = { "menuone", "noselect", "popup" }
+
 vim.pack.add({
   { src = "https://github.com/nvim-mini/mini.pick", version = "stable" },
+  { src = "https://github.com/nvim-mini/mini.completion", version = "stable" },
 })
 require("mini.pick").setup()
+require("mini.completion").setup()
 
 vim.keymap.set("n", "<leader>ff", "<cmd>Pick files<CR>", {
   desc = "mini.pick files",
