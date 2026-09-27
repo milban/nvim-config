@@ -12,16 +12,22 @@ require("yanky").setup({
       action = function(item)
         if vim.bo.buftype == "terminal" then
           if item then
-            -- 터미널에는 undo 기반 이력 순환 대신 기본 put으로 전달합니다.
-            -- 줄 단위 yank의 마지막 개행은 커밋 입력창에 보내지 않습니다.
-            local text = item.regcontents
-            if item.regtype == "V" then
-              text = text:gsub("\n$", "")
+            if vim.bo.filetype == "lazygit" then
+              -- 제목 입력칸에 직접 put하면 개행이 사라집니다.
+              -- LazyGit의 커밋 메뉴로 제목과 본문을 함께 가져옵니다.
+              vim.fn.setreg("+", item.regcontents, item.regtype)
+              vim.api.nvim_chan_send(vim.b.terminal_job_id, "\15p") -- Ctrl-o, p
+            else
+              -- 일반 터미널에는 undo 기반 이력 순환 대신 기본 put으로 전달합니다.
+              local text = item.regcontents
+              if item.regtype == "V" then
+                text = text:gsub("\n$", "")
+              end
+              local saved = vim.fn.getreginfo("z")
+              vim.fn.setreg("z", text, "v")
+              vim.cmd.normal({ '"zp', bang = true })
+              vim.fn.setreg("z", saved)
             end
-            local saved = vim.fn.getreginfo("z")
-            vim.fn.setreg("z", text, "v")
-            vim.cmd.normal({ '"zp', bang = true })
-            vim.fn.setreg("z", saved)
           end
           vim.cmd.startinsert()
         else
