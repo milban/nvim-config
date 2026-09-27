@@ -1,5 +1,6 @@
 require("config.options")
 require("config.plugins")
+require("config.buffers")
 require("config.yank")
 require("config.git")
 require("config.ai")

@@ -1,5 +1,10 @@
 {
   "plugins": {
+    "bufferline.nvim": {
+      "rev": "655133c3b4c3e5e05ec549b9f8cc2894ac6f51b3",
+      "src": "https://github.com/akinsho/bufferline.nvim",
+      "version": "4.0.0 - 5.0.0"
+    },
     "codecompanion.nvim": {
       "rev": "56f5b5237ad69c0eb7558a6b6058cba862e4e876",
       "src": "https://github.com/olimorris/codecompanion.nvim",
@@ -16,6 +21,11 @@
     "lazygit.nvim": {
       "rev": "9ffc6103926718f7070fb4017694543cd7dc9718",
       "src": "https://github.com/kdheepak/lazygit.nvim"
+    },
+    "mini.bufremove": {
+      "rev": "4cfbb201b2760da79ca6e1a00e9f67cbc99cbb8f",
+      "src": "https://github.com/nvim-mini/mini.bufremove",
+      "version": "'stable'"
     },
     "mini.completion": {
       "rev": "0aeee1231b90d70563e24facc238ab4359b8d5fc",
