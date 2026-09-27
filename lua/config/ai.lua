@@ -25,6 +25,16 @@ require("codecompanion").setup({
   },
 })
 
+vim.api.nvim_create_autocmd("FileType", {
+  group = vim.api.nvim_create_augroup("CodeCompanionCompletion", { clear = true }),
+  pattern = "codecompanion",
+  callback = function(event)
+    vim.b[event.buf].minicompletion_config = {
+      fallback_action = "<C-x><C-o>",
+    }
+  end,
+})
+
 vim.keymap.set("n", "<leader>aa", "<cmd>CodeCompanionChat Toggle<CR>", {
   desc = "AI 대화 창을 열거나 숨깁니다",
 })
