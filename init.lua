@@ -1,5 +1,14 @@
 vim.g.mapleader = " "
 
+vim.pack.add({
+  { src = "https://github.com/nvim-mini/mini.pick", version = "stable" },
+})
+require("mini.pick").setup()
+
+vim.keymap.set("n", "<leader>ff", "<cmd>Pick files<CR>", {
+  desc = "mini.pick files",
+})
+
 local config_dir = vim.fn.stdpath("config")
 local guide_paths = {
   vim_language = config_dir .. "/docs/vim-language.md",
