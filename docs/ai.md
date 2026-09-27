@@ -26,6 +26,17 @@ Neovim을 다시 실행한 뒤 `Space aa`로 대화 창을 엽니다.
 현재 버퍼는 `#{buffer}`, LSP 진단은 `#{diagnostics}`, Git 변경 사항은
 `#{diff}`를 질문에 넣어 전달할 수 있습니다.
 
+## Markdown 표시
+
+`render-markdown.nvim`으로 일반 Markdown 문서와 CodeCompanion 대화의 제목,
+코드 블록, 목록, 표를 보기 좋게 표시합니다. 파일 내용 자체는 변경하지 않습니다.
+
+- `:RenderMarkdown toggle`: Markdown 표시 기능을 켜거나 끕니다.
+- `:RenderMarkdown buf_toggle`: 현재 버퍼에서만 표시 기능을 켜거나 끕니다.
+
+일반 Markdown 문서는 입력 모드에서 원문을 편집하고 Normal 모드에서 렌더링된
+내용을 읽을 수 있습니다. 커서가 있는 부분은 편집하기 쉽도록 원문이 드러날 수 있습니다.
+
 ## 연결과 권한
 
 - ChatGPT 인증을 사용합니다. 필요한 경우 터미널에서 `codex login`을 실행합니다.
