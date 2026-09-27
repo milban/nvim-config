@@ -51,6 +51,7 @@ vim.keymap.set("n", "<leader>bh", "<cmd>BufferHelp<CR>", {
 })
 
 vim.lsp.enable("lua_ls")
+vim.lsp.enable("tsc")
 
 vim.diagnostic.config({
   virtual_text = true,
