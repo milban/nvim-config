@@ -1,5 +1,6 @@
 require("config.options")
 require("config.plugins")
+require("config.git")
 require("config.ai")
 require("config.guides")
 require("config.lsp")

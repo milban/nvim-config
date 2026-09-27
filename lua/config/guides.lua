@@ -1,6 +1,12 @@
 local config_dir = vim.fn.stdpath("config")
 local guides = {
   {
+    command = "GitHelp",
+    key = "<leader>gh",
+    file = "git-keymaps.md",
+    desc = "Git 사용법과 단축키 문서를 엽니다",
+  },
+  {
     command = "VimLanguage",
     key = "<leader>vl",
     file = "vim-language.md",
