@@ -1,6 +1,12 @@
 local config_dir = vim.fn.stdpath("config")
 local guides = {
   {
+    command = "YankHelp",
+    key = "<leader>yh",
+    file = "yank-registers.md",
+    desc = "복사 이력과 레지스터 사용법 문서를 엽니다",
+  },
+  {
     command = "GitHelp",
     key = "<leader>gh",
     file = "git-keymaps.md",

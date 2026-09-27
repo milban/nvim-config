@@ -68,6 +68,9 @@ LazyGit 화면에서는 아래 키를 사용합니다. 화면과 선택 항목�
 
 파일 전체를 커밋하실 때는 3번을 생략하고 LazyGit의 Files 패널에서 `Space`로 stage하셔도 됩니다.
 
+복사 이력에서 커밋 메시지를 가져오시려면 입력창에서 `Ctrl-\` → `Ctrl-n` → `Space fy`를 누르시면 됩니다.
+목록에서 선택하면 붙여넣고 입력 모드로 돌아갑니다. 자세한 내용은 `:YankHelp`에서 확인하실 수 있습니다.
+
 ## 공식 문서
 
 - [gitsigns.nvim](https://github.com/lewis6991/gitsigns.nvim)
