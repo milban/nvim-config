@@ -1,5 +1,10 @@
 vim.g.mapleader = " "
 
+vim.opt.expandtab = true
+vim.opt.tabstop = 2
+vim.opt.shiftwidth = 2
+vim.opt.softtabstop = 2
+
 vim.pack.add({
   { src = "https://github.com/nvim-mini/mini.pick", version = "stable" },
 })
