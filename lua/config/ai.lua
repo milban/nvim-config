@@ -23,6 +23,16 @@ require("codecompanion").setup({
       adapter = "codex",
     },
   },
+  display = {
+    chat = {
+      window = {
+        layout = "vertical",
+        position = "right",
+        full_height = true,
+        width = 0.35,
+      },
+    },
+  },
 })
 
 vim.api.nvim_create_autocmd("FileType", {
