@@ -1,5 +1,9 @@
 {
   "plugins": {
+    "conform.nvim": {
+      "rev": "016802de402556da54c36bd7359b441266b01cdd",
+      "src": "https://github.com/stevearc/conform.nvim"
+    },
     "mini.completion": {
       "rev": "0aeee1231b90d70563e24facc238ab4359b8d5fc",
       "src": "https://github.com/nvim-mini/mini.completion",

@@ -2,6 +2,7 @@ vim.pack.add({
   { src = "https://github.com/nvim-mini/mini.pick", version = "stable" },
   { src = "https://github.com/nvim-mini/mini.completion", version = "stable" },
   { src = "https://github.com/nvim-mini/mini.pairs", version = "stable" },
+  { src = "https://github.com/stevearc/conform.nvim" },
 })
 require("mini.pick").setup()
 require("mini.completion").setup()
